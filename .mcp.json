@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "vector-store": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "${CLAUDE_PROJECT_DIR:-.}/vector_store",
+        "python",
+        "-m",
+        "vector_store.server"
+      ],
+      "env": {}
+    }
+  }
+}
